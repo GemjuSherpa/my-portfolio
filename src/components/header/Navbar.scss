@@ -1,0 +1,60 @@
+@import "../../utilities/common.scss";
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+}
+
+.logo {
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+
+    img{
+        width: 170px;
+        height: 100%;
+    }
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li{
+            list-style: none;
+            margin: 0rem 1rem 0 1rem;
+            color: $primary-font-color;
+
+            &:hover,
+            &:focus {
+                color: $secondary;
+            }  
+        }
+    }
+
+    // Button styles
+    .resume {
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        margin-left: .5em;
+        border: 0.1em solid $secondary;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        font-family: $roboto-mono;
+        font-weight: 400;
+        color: $primary-font-color;
+        background-color: $primary;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    .resume:hover {
+        color: $secondary;
+    }
+}
