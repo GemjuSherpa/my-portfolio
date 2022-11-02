@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import logo from "../../images/logo.png";
+import logo from "../../images/logo1.png";
 
 import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <div className="header">
+    <nav className="header">
+      {/* Logo */}
       <div className="logo">
         <Link to="/">
           <img src={logo} alt="logo" />
@@ -14,8 +15,11 @@ const Navbar = () => {
       </div>
 
       {/* nav links */}
-      <div className="nav-items">
-        <ul className="nav-list">
+      <ul className="nav-items">
+        {/* For toggle */}
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" className="hamburger">&#9776;</label>
+        <div className="nav-list">
           <Link to="/">
             <li className="active">Home</li>
           </Link>
@@ -28,12 +32,36 @@ const Navbar = () => {
           <Link to="/contact">
             <li>Contact</li>
           </Link>
-        </ul>
 
-        {/* resume button */}
-        <a href="#" className="resume">Resume</a>
-      </div>
-    </div>
+          {/* resume button */}
+          <li>
+            <a href="#" className="btn">My Resume</a>
+          </li>
+          
+        </div>
+
+       
+      </ul>
+    </nav>
+
+    // <nav class="navbar">
+    //   {/* <!-- LOGO --> */}
+    //   <div class="logo">MUO</div>
+    //   {/* <!-- NAVIGATION MENU --> */}
+    //   <ul class="nav-links">
+    //     {/* <!-- USING CHECKBOX HACK --> */}
+    //     <input type="checkbox" id="checkbox_toggle" />
+    //     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    //     {/* <!-- NAVIGATION MENUS --> */}
+    //     <div class="menu">
+    //       <li><a href="/">Home</a></li>
+    //       <li><a href="/">About</a></li>
+    //       <li><a href="/">Pricing</a></li>
+    //       <li><a href="/">Contact</a></li>
+    //     </div>
+    //   </ul>
+    // </nav>
+
   )
 }
 

@@ -1,0 +1,20 @@
+
+ // Button styles
+ .btn {
+     display: inline-block;
+     padding: 0.7em 1.2em 1em 1.2em;
+     margin-left: .5em;
+     border: 0.1em solid $secondary;
+     border-radius: 0.12em;
+     box-sizing: border-box;
+     font-family: $roboto-mono;
+     font-weight: 300;
+     color: $primary-font-color;
+     background-color: $primary;
+     text-align: center;
+     transition: all 0.2s;
+ }
+
+ .btn:hover {
+     color: $secondary;
+ }

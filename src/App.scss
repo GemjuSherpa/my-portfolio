@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $roboto-mono;
+    font-weight: 200;
     color: $primary-font-color;
 }
 
@@ -14,6 +15,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .App {

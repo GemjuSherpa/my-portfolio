@@ -1,4 +1,5 @@
 @import "../../utilities/common.scss";
+@import "../../utilities/helper.scss";
 
 .header {
     display: flex;
@@ -8,53 +9,101 @@
 }
 
 .logo {
-    margin-top: -1.5rem;
-    margin-left: -1.5rem;
+    margin-top: .5rem;
 
     img{
-        width: 170px;
+        width: 100px;
         height: 100%;
     }
 }
 
-.nav-items {
+.nav-list {
     display: flex;
-    justify-content: space-between;
+    font-size: 14px;
 
-    ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    li {
+        margin: 0rem 1rem 0 1rem;
+        color: $primary-font-color;
+        text-align: center;
 
-        li{
-            list-style: none;
-            margin: 0rem 1rem 0 1rem;
-            color: $primary-font-color;
+        &:hover,
+        &:focus {
+            color: $secondary;
+        }  
+    }
+}
 
-            &:hover,
-            &:focus {
-                color: $secondary;
-            }  
+/*RESPONSIVE NAVBAR MENU STARTS*/
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 32px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .logo {
+        margin-top: 1rem;
+        
+        img {
+            width: 75px;
+            height: 100%;
         }
     }
 
-    // Button styles
-    .resume {
-        display: inline-block;
-        padding: 0.35em 1.2em;
-        margin-left: .5em;
-        border: 0.1em solid $secondary;
-        border-radius: 0.12em;
-        box-sizing: border-box;
-        font-family: $roboto-mono;
-        font-weight: 400;
-        color: $primary-font-color;
-        background-color: $primary;
+    .nav-list {
+        display: none;
+        position: absolute;
+        background-color: rgba($color: $primary, $alpha: 0.8);
+        right: 0;
+        left: 0;
         text-align: center;
-        transition: all 0.2s;
+        margin: 2rem 0;
+
+        li {
+            padding: 0.5rem;
+        }
+
+        li:hover {
+            display: inline-block;
+            color: $secondary;
+            transition: 0.3s ease;
+        }
+
     }
 
-    .resume:hover {
-        color: $secondary;
+    input[type=checkbox]:checked~.nav-list {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
     }
 }
+
+// .nav-items {
+//     display: flex;
+//     justify-content: space-between;
+
+//     ul{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         li{
+//             list-style: none;
+//             margin: 0rem 1rem 0 1rem;
+//             color: $primary-font-color;
+
+//             &:hover,
+//             &:focus {
+//                 color: $secondary;
+//             }  
+//         }
+//     }
+// }
