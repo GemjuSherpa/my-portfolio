@@ -66,6 +66,9 @@
         background-color: rgba($color: $secondary, $alpha: 0.6);
     }
 
+    // for mobile devices
+    // ############################################################
+
     @include devices (mobile){
         .brand-name {
             margin: 1rem 0;

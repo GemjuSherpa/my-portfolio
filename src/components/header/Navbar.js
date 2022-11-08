@@ -6,6 +6,8 @@ import logo from "../../images/logo1.png";
 import "./Navbar.scss";
 
 const Navbar = () => {
+
+  // Set isExpanded and setIsExpanded boolean flag
   const [ isExpanded, setIsExpanded ] = useState(false);
 
   return (
@@ -14,6 +16,7 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </Link>
 
+      {/* hamburger button for nav menu toggling */}
       <button 
         className="hamburger" 
         onClick={()=> {
@@ -35,6 +38,7 @@ const Navbar = () => {
         </svg>
       </button>
 
+      {/* Nav Menus */}
       <div
         className={
           isExpanded ? "navigation-menu expanded" : "navigation-menu"
