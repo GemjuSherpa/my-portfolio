@@ -4,13 +4,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $open-sans;
 }
 
 body {
     background: $primary;
+    font-family: $roboto-mono;
+    font-weight: 200;
+    color: $primary-font-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .App {
-    margin: .5rem 1rem .5rem 1rem;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
 }
