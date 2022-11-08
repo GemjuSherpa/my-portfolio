@@ -1,109 +1,107 @@
 @import "../../utilities/common.scss";
 @import "../../utilities/helper.scss";
+@import "../../utilities/mixins.scss";
 
-.header {
+.navigation {
+    height: 60px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    top: 0;
-}
+    position: relative;
+    padding: 0.5rem 0rem;
+    margin-bottom: 1rem;
 
-.logo {
-    margin-top: .5rem;
-
-    img{
-        width: 100px;
-        height: 100%;
-    }
-}
-
-.nav-list {
-    display: flex;
-    font-size: 14px;
-
-    li {
-        margin: 0rem 1rem 0 1rem;
-        color: $primary-font-color;
-        text-align: center;
-
-        &:hover,
-        &:focus {
-            color: $secondary;
-        }  
-    }
-}
-
-/*RESPONSIVE NAVBAR MENU STARTS*/
-input[type=checkbox] {
-    display: none;
-}
-
-/*HAMBURGER MENU*/
-.hamburger {
-    display: none;
-    font-size: 32px;
-    user-select: none;
-}
-
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-    .logo {
-        margin-top: 1rem;
-        
+    .brand-name {
+        margin-top: .5rem;
         img {
-            width: 75px;
+            width: 100px;
             height: 100%;
         }
     }
 
-    .nav-list {
-        display: none;
-        position: absolute;
-        background-color: rgba($color: $primary, $alpha: 0.8);
-        right: 0;
-        left: 0;
-        text-align: center;
-        margin: 2rem 0;
+    .navigation-menu {
+        margin-left: auto;
 
-        li {
-            padding: 0.5rem;
+        ul {
+            display: flex;
+            padding: 0;
+            font-size: 14px;
+
+            li {
+                list-style-type: none;
+                margin: 0 1rem;
+                color: $primary-font-color;
+
+                &:hover,
+                &:focus {
+                    color: $secondary;
+                }
+            }
+
+            a {
+                padding-top: 1rem;
+            }
         }
-
-        li:hover {
-            display: inline-block;
-            color: $secondary;
-            transition: 0.3s ease;
-        }
-
-    }
-
-    input[type=checkbox]:checked~.nav-list {
-        display: block;
     }
 
     .hamburger {
-        display: block;
+        // removes default border on button element
+        border: 0;
+        height: 40px;
+        width: 40px;
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: $primary;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        // positions the icon to the right and center aligns it vertically
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+        display: none;
+    }
+
+    .hamburger:hover {
+        background-color: rgba($color: $secondary, $alpha: 0.6);
+    }
+
+    @include devices (mobile){
+        .brand-name {
+            margin: 1rem 0;
+            img {
+                width: 75px;
+                height: 100%;
+            }
+        }
+        .hamburger {
+            display: block;
+        }
+
+        .navigation-menu {
+            ul {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                flex-direction: column;
+                width: 100%;
+                height: calc(100vh - 77px);
+                background-color: rgba($color: $primary, $alpha: 0.8);
+                border-top: 1px solid black;
+            
+                li {
+                    text-align: center;
+                    padding: 0.5rem;
+                }
+            }
+
+            &.expanded {
+                ul {
+                    display: block;
+                }
+            }
+           
+        }
     }
 }
-
-// .nav-items {
-//     display: flex;
-//     justify-content: space-between;
-
-//     ul{
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-
-//         li{
-//             list-style: none;
-//             margin: 0rem 1rem 0 1rem;
-//             color: $primary-font-color;
-
-//             &:hover,
-//             &:focus {
-//                 color: $secondary;
-//             }  
-//         }
-//     }
-// }
