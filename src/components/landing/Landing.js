@@ -16,7 +16,7 @@ const Landing = () => {
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus tempora error perspiciatis? Ex quam, vero harum facere, quas saepe modi dignissimos quae autem, error consequuntur assumenda delectus? Adipisci, labore porro?</p>
 
         <ul>
-          <h3>Main Expertise</h3>
+          <h3>Area of Expertise</h3>
 
           <li>Web Development</li>
           <li>Data Analysis</li>
@@ -25,6 +25,8 @@ const Landing = () => {
         </ul>
         
       </div>
+
+      {/* Contact link */}
       <Link to="/contact">
         <li className='btn'>Contact</li>
       </Link>

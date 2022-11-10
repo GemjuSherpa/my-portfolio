@@ -1,3 +1,73 @@
 {
-    
+    "name": "Gemju Sherpa",
+    "title": "Software Developer",
+    "description": "A motivated software developer with in-depth knowledge of development, testing, debugging and deployment in a different environment, seeking a position in a growth oriented, dynamic, and progressive company where my skills are utilised in the maximum way possible to the advantage of the company while having the scope to further enhance my skills.",
+    "expertise": [
+        "Web Development",
+        "Data Analysis",
+        "AI and Machine Learning"
+    ],
+    "skills": {
+        "technical-skills": [
+            "JavaScript",
+            "HTML5",
+            "CSS",
+            "Python",
+            "C#",
+            "PHP"
+        ],
+        "web-stack": [
+            "React/Node/Express/Mongo",
+            "C# .Net Core/MVC",
+            "Laravel"
+        ],
+        "professional-soft-skills": [
+            "Communication",
+            "Team player",
+            "Time management"
+        ]
+    },
+    "experience": {
+        "work": [
+            {
+                "company": "Drone That Pty ltd.",
+                "role": "Junior Web Developer",
+                "skills": "Node, React, JavaScript, HTML, CSS, Bootstrap"
+            }
+        ],
+        "project": [
+            {
+                "name": "Werk",
+                "type": "Web page",
+                "programming-language": "React",
+                "url": ""
+            },
+            {
+                "name": "Drone That pty ltd",
+                "type": "Website",
+                "programming-language": "Node, React, JavaScript, HTML/CSS, Bootstrap",
+                "url": "https://www.dronethat.com.au"
+            }
+        ]
+    },
+    "education": [
+        {
+            "level": "Diploma",
+            "title": "Information Technology",
+            "university": "Griffith University",
+            "completed": "2016"
+        },
+        {
+            "level": "Bachelor",
+            "title": "Information Technology",
+            "university": "Griffith University",
+            "completed": "2018"
+        },
+        {
+            "level": "Master",
+            "title": "Information Technology",
+            "university": "University of Tasmania",
+            "completed": "Expected in July 2023"
+        }
+    ]
 }

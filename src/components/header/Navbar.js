@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../images/logo1.png";
+import resume from "../../Resume.pdf";
 
 import "./Navbar.scss";
 
@@ -58,7 +59,7 @@ const Navbar = () => {
            </Link>
           {/* resume button */}
           <li>
-            <a href="https://www.linkedin.com/in/gemjusherpa/" target="_blank" rel="noreferrer" className="btn">My Resume</a>
+            <a href={resume} target="_blank" rel="noreferrer" className="btn">My Resume</a>
           </li>
         </ul>
       </div>
