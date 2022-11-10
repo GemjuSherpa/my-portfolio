@@ -13,7 +13,7 @@ const Landing = () => {
       </div>
 
       <div className="about">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus tempora error perspiciatis? Ex quam, vero harum facere, quas saepe modi dignissimos quae autem, error consequuntur assumenda delectus? Adipisci, labore porro?</p>
+        <p>A motivated software developer with in-depth knowledge of development, testing, debugging and deployment in a different environment, seeking a position in a growth oriented, dynamic, and progressive company where my skills are utilised in the maximum way possible to the advantage of the company while having the scope to further enhance my skills.</p>
 
         <ul>
           <h3>Area of Expertise</h3>
