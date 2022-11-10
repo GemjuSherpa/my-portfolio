@@ -2,10 +2,13 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../images/logo1.png";
+import resume from "../../Resume.pdf";
 
 import "./Navbar.scss";
 
 const Navbar = () => {
+
+  // Set isExpanded and setIsExpanded boolean flag
   const [ isExpanded, setIsExpanded ] = useState(false);
 
   return (
@@ -14,6 +17,7 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </Link>
 
+      {/* hamburger button for nav menu toggling */}
       <button 
         className="hamburger" 
         onClick={()=> {
@@ -35,6 +39,7 @@ const Navbar = () => {
         </svg>
       </button>
 
+      {/* Nav Menus */}
       <div
         className={
           isExpanded ? "navigation-menu expanded" : "navigation-menu"
@@ -54,7 +59,7 @@ const Navbar = () => {
            </Link>
           {/* resume button */}
           <li>
-            <a href="https://www.linkedin.com/in/gemjusherpa/" target="_blank" rel="noreferrer" className="btn">My Resume</a>
+            <a href={resume} target="_blank" rel="noreferrer" className="btn">My Resume</a>
           </li>
         </ul>
       </div>
