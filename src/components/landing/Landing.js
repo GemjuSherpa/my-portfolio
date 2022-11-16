@@ -1,29 +1,36 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-
+import React from 'react';
+import {Link} from 'react-router-dom';
+import { getAllProfiles } from '../../features/profile/profileSlice';
+import { useSelector } from 'react-redux';
 
 import './Landing.scss';
 
+
 const Landing = () => {
+
+  // Get profile data from getAllProfiles action
+  const profile = useSelector(getAllProfiles);
+  const expertise = profile.expertise
+
   return (
     <div className="home">
+
       <div className="name">
-        <h1>Gemju Sherpa</h1>
-        <h2>Software Developer</h2>
+        <h1>{profile.name}</h1>
+        <h2>{profile.title}</h2>
       </div>
 
       <div className="about">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus tempora error perspiciatis? Ex quam, vero harum facere, quas saepe modi dignissimos quae autem, error consequuntur assumenda delectus? Adipisci, labore porro?</p>
+        <p>{profile.description}</p>
+        <h3>Area of Expertise</h3>
 
         <ul>
-          <h3>Area of Expertise</h3>
-
-          <li>Web Development</li>
-          <li>Data Analysis</li>
-          <li>AI and Machine Learning</li>
-
-        </ul>
+          
+          {expertise?.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
         
+        </ul>
       </div>
 
       {/* Contact link */}
