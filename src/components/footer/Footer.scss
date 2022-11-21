@@ -1,0 +1,41 @@
+@import "../../utilities/common.scss";
+@import "../../utilities/helper.scss";
+@import "../../utilities/mixins.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+
+    .social{
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+            
+            li{
+                padding: 1rem;
+
+                .social-icon{
+                    height: 32px;
+                    width: auto;
+                    color: $primary-font-color;
+                }
+
+                :hover{
+                    cursor: pointer;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        color: $primary-font-color;
+        text-align: center;
+        margin-top: 1rem;
+        bottom: 0;
+    }
+    
+}
