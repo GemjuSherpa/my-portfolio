@@ -1,0 +1,107 @@
+@import "../../utilities/common.scss";
+@import "../../utilities/helper.scss";
+@import "../../utilities/mixins.scss";
+
+.about{
+    margin-top: 4rem;
+    padding: 3rem;
+
+    .section-tag{
+        color: $secondary;
+    }
+
+    .about-me {
+        display: flex;
+        align-items: row;
+
+        .about-me-left{
+            margin-right: 1rem;
+
+            h3{
+                color: $secondary-font-color;
+            }
+            p {
+                font-size: smaller;
+                text-align: justify;
+                margin: 0.5rem 0 1rem 0;
+            }
+
+        }
+
+        .about-me-right {
+            padding-top: 4rem;
+            margin-left: 1rem;
+
+            figure {
+                padding-top: 1rem;
+                border-bottom: 3px solid $secondary;
+                border-right: 3px solid $secondary;
+                display: inline-flex;
+
+                img {
+                    height: 200px;
+                    width: auto;
+
+                }
+
+            }
+            
+            
+        }
+    }
+
+    .education{
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1rem 0;
+        }
+    
+        th{
+            border: 1px solid $secondary;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        td {
+            border: 1px solid $secondary;
+            padding: 0.5rem;
+            text-align: center;
+        }
+    }
+
+    // For mobile devices
+    // ###################################################
+
+    @include devices (mobile) {
+        margin-top: 2rem;
+        padding: 1rem;
+        .about-me {
+
+            flex-direction: column-reverse;
+
+            .about-me-left{
+                margin-right: 0;
+            }
+    
+            .about-me-right {
+                padding-top: 2rem;
+                margin-left: auto;
+                margin-right: auto;
+                
+                figure {
+                    margin-bottom: 2rem;
+                    border: 3px solid $secondary;
+
+                    // border-right: none;
+                    // border-bottom: none;
+
+                    img {
+                        height: 250px;
+                        width: auto;
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,8 @@
         "id": 1,
         "name": "Gemju Sherpa",
         "title": "Software Developer",
+        "about": "I am final year MITS student from University of Tasmania, expecting to graduate by June 2023. I have achieved my bachelor degree from Griffith University in 2018, majoring in Software Development and Database Administration. My motivation to start Masters is to have better exposure to the industry and fill the gaps in terms of technology advancement. Bieing an international student, I strongly believe that working cultures are very different from my home country and are critical to learn to succeed in my software development career. During these study phase in both Bachelor and Master degree, I have been exposed to different work environment as an intern and junior developer that helped me to gain signifincant understanding of cultural diferrences.",
+        "currentProject": "Currently, I am developing a Multi-agent systems for search and rescue using Deep Reinforcement Learning as part of my research.",
         "description": "A motivated software developer with in-depth knowledge of development, testing, debugging and deployment in a different environment, seeking a position in a growth oriented, dynamic, and progressive company where my skills are utilised in the maximum way possible to the advantage of the company while having the scope to further enhance my skills.",
         "expertise": [
             "Web Development",
@@ -11,7 +13,7 @@
         ],
         "skills": [
             {
-                "technical-skills": [
+                "technicalSkills": [
                     "JavaScript",
                     "HTML5",
                     "CSS",
@@ -19,12 +21,12 @@
                     "C#",
                     "PHP"
                 ],
-                "web-stack": [
+                "webStacks": [
                     "React/Node/Express/Mongo",
                     "C# .Net Core/MVC",
                     "Laravel"
                 ],
-                "professional-soft-skills": [
+                "professionalSoftSkills": [
                     "Communication",
                     "Team player",
                     "Time management"
@@ -33,11 +35,13 @@
         ],
         "experience": [
             {
+                "id": 1,
                 "company": "Drone That Pty ltd.",
                 "role": "Junior Web Developer",
                 "skills": "Node, React, JavaScript, HTML, CSS, Bootstrap"
             },
             {
+                "id": 2,
                 "company": "Logan City Council",
                 "role": "Graduate Developer Internship",
                 "skills": "JavaScript, HTML, CSS"
@@ -45,36 +49,44 @@
         ],
         "project": [
             {
+                "id": 1,
                 "name": "Werk",
                 "type": "Web page",
-                "programming-language": "React",
+                "programmingLanguage": "React",
                 "url": ""
             },
             {
+                "id": 2,
                 "name": "Drone That pty ltd",
                 "type": "Website",
-                "programming-language": "Node, React, JavaScript, HTML/CSS, Bootstrap",
+                "programmingLanguage": "Node, React, JavaScript, HTML/CSS, Bootstrap",
                 "url": "https://www.dronethat.com.au"
             }
         ],
         "education": [
             {
+                "id": 1,
                 "level": "Diploma",
                 "title": "Information Technology",
-                "university": "Griffith University",
-                "completed": "2016"
+                "university": "Griffith College",
+                "from": "2015",
+                "to": "2016"
             },
             {
+                "id": 2,
                 "level": "Bachelor",
                 "title": "Information Technology",
                 "university": "Griffith University",
-                "completed": "2018"
+                "from": "2016",
+                "to": "2018"
             },
             {
+                "id": 3,
                 "level": "Master",
                 "title": "Information Technology",
                 "university": "University of Tasmania",
-                "completed": "Expected in July 2023"
+                "from": "2021",
+                "to": ""
             }
         ]
     }

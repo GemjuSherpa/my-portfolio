@@ -11,7 +11,7 @@ const Landing = () => {
   // Get profile data from getAllProfiles action
   const profile = useSelector(getAllProfiles);
   const expertise = profile.expertise
-
+  console.log(profile);
   return (
     <div className="home">
 

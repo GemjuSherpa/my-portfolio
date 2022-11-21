@@ -21,12 +21,27 @@ const App = () => {
   const dispatch = useDispatch();
 
   // fetch profile data from profile.json file
+  // useEffect(()=>{
+  //   axios
+  //   .get("profile.json")
+  //   .then((res)=> dispatch(getProfiles(res.data[0])))
+  //   .catch(err=>console.log(err))
+  // }, [dispatch]);
+
   useEffect(()=>{
+    fetchProfile();
+  },[]);
+
+  const fetchProfile = ( ) => {
     axios
-    .get("profile.json")
-    .then((res)=> dispatch(getProfiles(res.data[0])))
-    .catch(err=>console.log(err))
-  }, [dispatch]);
+      .get("profile.json")
+      .then((res) => {
+        dispatch(getProfiles(res.data[0]))
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 
   return (
 
