@@ -8,6 +8,12 @@
 
     .section-tag{
         color: $secondary;
+        margin-bottom: 1rem;
+    }
+
+    .fa-arrow{
+        color: $secondary-font-color;
+        padding-right: 0.5rem;
     }
 
     .about-me {
@@ -20,7 +26,9 @@
             h3{
                 color: $secondary-font-color;
             }
+
             p {
+                // font-family: $open-sans;
                 font-size: smaller;
                 text-align: justify;
                 margin: 0.5rem 0 1rem 0;
@@ -50,6 +58,19 @@
         }
     }
 
+    .skills{
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                padding: 1rem;
+            }
+        }
+    }
+
     .education{
         table {
             border-collapse: collapse;
@@ -61,11 +82,37 @@
             border: 1px solid $secondary;
             padding: 0.5rem;
             text-align: center;
+            
         }
         td {
             border: 1px solid $secondary;
             padding: 0.5rem;
             text-align: center;
+            color: $secondary-font-color;
+        }
+    }
+
+    .projects {
+        margin-bottom: 2rem;
+
+        .project-lists ul{
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                margin: 0.5rem;
+
+                a {
+                    color: $secondary-font-color;
+                }
+
+                :hover{
+                    color: $secondary;
+                }
+            }
         }
     }
 
@@ -92,15 +139,29 @@
                     margin-bottom: 2rem;
                     border: 3px solid $secondary;
 
-                    // border-right: none;
-                    // border-bottom: none;
-
                     img {
                         height: 250px;
                         width: auto;
                     }
 
                 }
+            }
+        }
+
+        .education {
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: -1rem;
+                font-size: small;
+            }
+        }
+
+        .projects{
+            .project-lists{
+                font-size: small;
             }
         }
     }

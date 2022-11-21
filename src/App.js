@@ -15,23 +15,19 @@ import PageNotFound from "./components/page_not_found/PageNotFound";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { getProfiles } from "./features/profile/profileSlice";
+import { getProjects, getProjectsSuccess, getProjectsFailure } from './features/project/projectSlice';
 
 const App = () => {
 
   const dispatch = useDispatch();
 
-  // fetch profile data from profile.json file
-  // useEffect(()=>{
-  //   axios
-  //   .get("profile.json")
-  //   .then((res)=> dispatch(getProfiles(res.data[0])))
-  //   .catch(err=>console.log(err))
-  // }, [dispatch]);
-
+  // dispatch the actions
   useEffect(()=>{
     fetchProfile();
-  },[]);
+    dispatch(fetchProjects());
+  },[dispatch]);
 
+  // fetch profiles
   const fetchProfile = ( ) => {
     axios
       .get("profile.json")
@@ -41,6 +37,22 @@ const App = () => {
       .catch(err => {
         console.log(err)
       })
+  }
+
+  // Asynchronous thunk action for fetching git profile
+  const fetchProjects = () => {
+    return async dispatch => {
+      dispatch(getProjects());
+
+      try {
+        const response = await fetch('https://api.github.com/users/GemjuSherpa/repos')
+        const data = await response.json()
+
+        dispatch(getProjectsSuccess(data))
+      } catch (error) {
+        dispatch(getProjectsFailure())
+      }
+    }
   }
 
   return (

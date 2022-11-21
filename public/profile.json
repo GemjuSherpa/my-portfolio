@@ -12,26 +12,16 @@
             "AI and Machine Learning"
         ],
         "skills": [
-            {
-                "technicalSkills": [
-                    "JavaScript",
-                    "HTML5",
-                    "CSS",
-                    "Python",
-                    "C#",
-                    "PHP"
-                ],
-                "webStacks": [
-                    "React/Node/Express/Mongo",
-                    "C# .Net Core/MVC",
-                    "Laravel"
-                ],
-                "professionalSoftSkills": [
-                    "Communication",
-                    "Team player",
-                    "Time management"
-                ]
-            }
+            "JavaScript", 
+            "HTML5/CSS3", 
+            "Python", 
+            "C#", 
+            "PHP", 
+            "MySQL/SQL", 
+            "MongoDB",
+            "React/Node/Express/Mongo",
+            "C# .Net Core/MVC",
+            "Laravel"
         ],
         "experience": [
             {
