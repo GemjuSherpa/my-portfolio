@@ -43,7 +43,7 @@ export default function Experience() {
 
   return (
     <div className="experiences">
-      <h1>My professional experiences</h1><hr />
+      <h1>My professional experiences</h1>
       {workExperiences}
     </div>
   )

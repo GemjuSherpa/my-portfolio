@@ -3,11 +3,14 @@
 @import "../../utilities/mixins.scss";
 
 .experiences{
-    margin: 4rem 2rem;
+    margin: 4rem;
 
     h1{
-        font-size: medium;
+        font-size: large;
+        text-align: center;
         margin-bottom: 0.2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $secondary;
     }
 
     .card{

@@ -1,0 +1,23 @@
+@import "../../utilities/common.scss";
+@import "../../utilities/helper.scss";
+@import "../../utilities/mixins.scss";
+
+.contact{
+    margin: 2rem;
+
+    .container{
+        padding: 10rem;
+        text-align: center;
+
+        h1{
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $secondary;
+        }
+
+        p{
+            color: $secondary-font-color;
+            margin-bottom: 1rem;
+        }
+    }
+}
