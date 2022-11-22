@@ -27,14 +27,33 @@
             {
                 "id": 1,
                 "company": "Drone That Pty ltd.",
+                "url": "https://www.dronethat.com.au",
                 "role": "Junior Web Developer",
-                "skills": "Node, React, JavaScript, HTML, CSS, Bootstrap"
+                "skills": "Node, React, JavaScript, HTML, CSS, Bootstrap",
+                "from": "2019",
+                "to": "2020",
+                "location": "Brisbane",
+                "responsibilities": [
+                    "Designed and developed SPA - website within the given time frame using technologies such as NodeJS, Express, React, HTML5, CSS3, Bootstrap, GSuite.",
+                    "Continuous Integration (CI) and Continuous Deployment using Git version control and Vercel.",
+                    "Web hosting and FTP server management - Crazy Domains.",
+                    "Search Engine Optimisation (SEO) - Optimised and Registered the website on google, and now can manipulate the user traffic and other data.",
+                    "Created multiple Google Adds campaigns and increased the potential customer by at least 40%"
+                ]
             },
             {
                 "id": 2,
                 "company": "Logan City Council",
+                "url": "https://www.logancitycouncil.com.au",
                 "role": "Graduate Developer Internship",
-                "skills": "JavaScript, HTML, CSS"
+                "skills": "JavaScript, HTML, CSS",
+                "from": "2018",
+                "to": "2018",
+                "location": "Brisbane",
+                "responsibilities": [
+                    "Designed and developed web-based property report generator tool using JavaScript, HTML, CSS",
+                    "Established an active communication in the discussions, meetings, and seminars involving proactively"
+                ]
             }
         ],
         "project": [
