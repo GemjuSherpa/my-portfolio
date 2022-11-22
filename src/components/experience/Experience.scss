@@ -1,0 +1,60 @@
+@import "../../utilities/common.scss";
+@import "../../utilities/helper.scss";
+@import "../../utilities/mixins.scss";
+
+.experiences{
+    margin: 4rem 2rem;
+
+    h1{
+        font-size: medium;
+        margin-bottom: 0.2rem;
+    }
+
+    .card{
+        padding: 1rem;
+
+        .card-header{
+            padding-bottom: 0.5rem;
+            h3{
+                color: $secondary;
+
+                a{
+                    color: $primary-font-color;
+                }
+                :hover{
+                    color: $secondary;
+                }
+            }
+            h4{
+                color: $secondary-font-color;
+            }
+        }
+
+        .card-body{
+            ul {
+                li{
+                    padding-bottom: 0.5rem;
+                    font-size: small;
+                    color: $secondary-font-color;
+
+                    .carret-icon{
+                        color: $secondary;
+                        font-size: medium;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        .card-footer{
+            margin-top: 1rem;
+            h5{
+                font-size: medium;
+                color: $primary-font-color;
+            }
+            p{
+                color: $secondary-font-color;
+            }
+        }
+    }
+}
