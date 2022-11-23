@@ -47,7 +47,7 @@
                 display: inline-flex;
 
                 img {
-                    height: 200px;
+                    height: 250px;
                     width: auto;
 
                 }
@@ -67,6 +67,7 @@
 
             li {
                 padding: 1rem;
+                color: $secondary-font-color;
             }
         }
     }
@@ -95,22 +96,25 @@
     .projects {
         margin-bottom: 2rem;
 
-        .project-lists ul{
-            
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: wrap;
+        .project-lists {
+            margin-top: 0.5rem;
+        
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
 
-            li {
-                margin: 0.5rem;
+                li {
+                    margin: 0.5rem;
 
-                a {
-                    color: $secondary-font-color;
-                }
+                    a {
+                        color: $secondary-font-color;
+                    }
 
-                :hover{
-                    color: $secondary;
+                    :hover{
+                        color: $secondary;
+                    }
                 }
             }
         }

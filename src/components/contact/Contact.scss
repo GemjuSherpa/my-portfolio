@@ -19,5 +19,17 @@
             color: $secondary-font-color;
             margin-bottom: 1rem;
         }
+
+        address{
+            margin-bottom: 2rem;
+        }
     }
+
+    // For mobile devices
+        @include devices (mobile) {
+            margin-top: 4rem;
+            .container{
+                padding: 0;
+            }
+        }
 }

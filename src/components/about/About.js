@@ -64,6 +64,7 @@ export default function About() {
       {/* Skills Sections */}
       <div className="skills">
         <h1 className='section-tag'>Skills</h1>
+        <p>These are some of the major programming languages and frameworks that I am comfortable working with.</p>
         <ul>
           {profiles.skills?.map(skill => (
             <li key={skill}><FontAwesomeIcon icon={faArrowTurnRight} className="fa-arrow"></FontAwesomeIcon>{skill}</li>
@@ -76,9 +77,6 @@ export default function About() {
       {/* Education sections */}
       <div className="education">
         <h1 className='section-tag'>Educations</h1>
-        {/* <div className="education-card">
-          {education}
-        </div> */}
         <table className="table">
           <thead>
             <tr>
@@ -98,6 +96,7 @@ export default function About() {
       {/* Projects sections */}
       <div className="projects">
         <h1 className='section-tag'>Projects</h1>
+        <p>Following are the projects from my public GitHub repository.</p>
         <div className="project-lists">
           <ul>
             {projectList}

@@ -6,8 +6,6 @@
     margin: 4rem;
 
     h1{
-        font-size: large;
-        text-align: center;
         margin-bottom: 0.2rem;
         padding-bottom: 0.5rem;
         border-bottom: 1px solid $secondary;
@@ -60,4 +58,14 @@
             }
         }
     }
+
+    // For Mobile devices
+        @include devices (mobile) {
+            margin: 0;
+            padding-top: 2rem;
+
+            h1{
+                text-align: center;
+            }
+        }
 }

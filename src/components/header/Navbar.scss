@@ -47,9 +47,9 @@
     .hamburger {
         // removes default border on button element
         border: 0;
-        height: 40px;
-        width: 40px;
-        padding: 0.5rem;
+        height: 45px;
+        width: 45px;
+        // padding: 0.5rem;
         border-radius: 50%;
         background-color: $primary;
         cursor: pointer;
@@ -71,7 +71,8 @@
 
     @include devices (mobile){
         .brand-name {
-            margin: 1rem 0;
+            // margin: 1rem 0;
+            padding-left: 1rem;
             img {
                 width: 75px;
                 height: 100%;
