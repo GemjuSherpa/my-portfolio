@@ -21,12 +21,6 @@ const App = () => {
 
   const dispatch = useDispatch();
 
-  // dispatch the actions
-  useEffect(()=>{
-    fetchProfile();
-    dispatch(fetchProjects());
-  },[dispatch, fetchProfile, fetchProjects]);
-
   // fetch profiles
   const fetchProfile = ( ) => {
     axios
@@ -54,6 +48,12 @@ const App = () => {
       }
     }
   }
+
+  // dispatch the actions
+  useEffect(()=>{
+    fetchProfile();
+    dispatch(fetchProjects());
+  },[dispatch]);
 
   return (
 
