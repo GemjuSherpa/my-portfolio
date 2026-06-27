@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useCallback, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
@@ -22,7 +22,7 @@ const App = () => {
   const dispatch = useDispatch();
 
   // fetch profiles
-  const fetchProfile = ( ) => {
+  const fetchProfile = useCallback(() => {
     axios
       .get("profile.json")
       .then((res) => {
@@ -31,10 +31,10 @@ const App = () => {
       .catch(err => {
         console.log(err)
       })
-  }
+  }, [dispatch]);
 
   // Asynchronous thunk action for fetching git profile
-  const fetchProjects = () => {
+  const fetchProjects = useCallback(() => {
     return async dispatch => {
       dispatch(getProjects());
 
@@ -47,13 +47,13 @@ const App = () => {
         dispatch(getProjectsFailure())
       }
     }
-  }
+  }, []);
 
   // dispatch the actions
-  useEffect(()=>{
+  useEffect(() => {
     fetchProfile();
     dispatch(fetchProjects());
-  },[dispatch]);
+  }, [dispatch, fetchProfile, fetchProjects]);
 
   return (
 
