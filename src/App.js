@@ -25,7 +25,7 @@ const App = () => {
   useEffect(()=>{
     fetchProfile();
     dispatch(fetchProjects());
-  },[dispatch]);
+  },[dispatch, fetchProfile, fetchProjects]);
 
   // fetch profiles
   const fetchProfile = ( ) => {
