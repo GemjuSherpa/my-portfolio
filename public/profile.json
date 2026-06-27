@@ -2,26 +2,33 @@
     {
         "id": 1,
         "name": "Gemju Sherpa",
-        "title": "Software Developer",
-        "about": "I am final year MITS student from University of Tasmania, expecting to graduate by June 2023. I have achieved my bachelor degree from Griffith University in 2018, majoring in Software Development and Database Administration. My motivation to start Masters is to have better exposure to the industry and fill the gaps in terms of technology advancement. Bieing an international student, I strongly believe that working cultures are very different from my home country and are critical to learn to succeed in my career. During these study phase in both Bachelor and Master degree, I have been exposed to different work environment as an intern and junior developer that helped me to gain signifincant understanding of cultural diferrences.",
-        "currentProject": "Currently, I am developing a Multi-agent systems for search and rescue using Deep Reinforcement Learning as part of my research.",
-        "description": "A motivated software developer with in-depth knowledge of development, testing, debugging and deployment in a different environment, seeking a position in a growth oriented, dynamic, and progressive company where my skills are utilised in the maximum way possible to the advantage of the company while having the scope to further enhance my skills.",
+        "title": "Software/AI/ML Engineer",
+        "about": "I am a Software Developer and AI Engineer with a strong background in full-stack development, machine learning, and data science. I hold a Master of Information Technology and Systems (Research/Data Science) from the University of Tasmania and have industry experience building scalable web applications, geospatial solutions, and cloud-based systems. My work spans software engineering, deep learning, large language models (LLMs), multi-agent reinforcement learning, data analytics, and information propagation research, with publications and open-source contributions in AI. I enjoy solving complex problems by combining modern software engineering practices with intelligent systems, and I am passionate about building innovative, data-driven solutions that create real-world impact.",
+        "currentProject": "I am currently working on AI/ML engineering specialty certification offered by Google, IBM and Microsoft. It is my goal to become a certified AI/ML engineer and contribute to the development of cutting-edge AI solutions. I am also actively involved in research projects related to information propagation and multi-agent systems, aiming to advance the field of AI and its applications.",
+        "description": "AI/ML Engineer and Software Developer with a Master's in Information Technology and Systems (Research/Data Science). Experienced in developing machine learning, deep learning, and LLM-based solutions using Python, TensorFlow, and PyTorch, with hands-on experience in Google Cloud and AWS. Strong background in building scalable AI applications, data pipelines, and intelligent systems to solve real-world problems.",
         "expertise": [
             "Web Development",
             "Data Analysis",
-            "AI and Machine Learning"
+            "AI and Machine Learning Engineering",
+            "Database Administration",
+            "Software Development",
+            "Cloud Computing"
         ],
         "skills": [
             "JavaScript", 
             "HTML5/CSS3", 
-            "Python", 
-            "C#", 
-            "PHP", 
+            "Python/Flask", 
+            "Java/Spring Boot", 
+            "PHP/Laravel", 
             "MySQL/SQL", 
-            "MongoDB",
-            "React/Node/Express/Mongo",
-            "C# .Net Core/MVC",
-            "Laravel"
+            "SQL, MySql, MongoDB",
+            "React/Node/Express/Mongo, NextJS, Tensorflow, Keras, PyTorch",
+            "OOP/MVC",
+            "Git/GitHub",
+            "Google Cloud Platform, AWS, Azure",
+            "Docker, Kubernetes",
+            "Linux/Unix",
+            "Agile/Scrum"
         ],
         "experience": [
             {
@@ -59,13 +66,20 @@
         "project": [
             {
                 "id": 1,
+                "name": "An LLM-enhanced Agent-based Simulation Tool for Information Propagation",
+                "type": "Research Project, Web based Simulation Tool",
+                "programmingLanguage": "Python",
+                "url": "https://www.ijcai.org/proceedings/2024/1007"
+            },
+            {
+                "id": 2,
                 "name": "Werk",
                 "type": "Web page",
                 "programmingLanguage": "React",
                 "url": ""
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Drone That pty ltd",
                 "type": "Website",
                 "programmingLanguage": "Node, React, JavaScript, HTML/CSS, Bootstrap",
@@ -95,6 +109,36 @@
                 "title": "Information Technology",
                 "university": "University of Tasmania",
                 "from": "2021",
+                "to": ""
+            }
+        ],
+        "certifications": [
+            {
+                "id": 1,
+                "title": "Google Cloud Professional Machine Learning Engineer",
+                "issuer": "Google",
+                "from": "2026",
+                "to": "2029"
+            },
+            {
+                "id": 2,
+                "title": "Google Cloud Big Data and Machine Learning Fundamentals",
+                "issuer": "Google",
+                "from": "2026",
+                "to": ""
+            },
+            {
+                "id": 3,
+                "title": "Microsoft Certified: Azure AI Engineer Associate",
+                "issuer": "Microsoft",
+                "from": "2026",
+                "to": "2029"
+            },
+            {
+                "id": 4,
+                "title": "IBM RAG and Agentic AI",
+                "issuer": "IBM",
+                "from": "2026",
                 "to": ""
             }
         ]
