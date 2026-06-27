@@ -41,6 +41,14 @@ export default function About() {
     <li className='btn'> <a href={item.svn_url} target="_blank" rel="noopener noreferrer">{item.name}</a> </li>
   ));
 
+  const certificationRows = profiles.certifications?.map(cert => (
+    <tr key={cert.id}>
+      <td>{cert.title}</td>
+      <td>{cert.issuer}</td>
+      <td>{cert.from} - {cert.to || "Present"}</td>
+    </tr>
+  ));
+
   return (
     
     <div className='about'>
@@ -105,6 +113,25 @@ export default function About() {
         
       </div>
       {/* End of projects section =================================================================== */}
+
+      {/* Certifications sections */}
+      <div className="certifications">
+        <h1 className='section-tag'>Certifications</h1>
+        <p>Here are some of the certifications I have obtained.</p>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Certification</th>
+              <th>Issuer</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            {certificationRows}
+          </tbody>
+        </table>
+      </div>
+      {/* End of certifications section =============================================================== */}
     </div>
   )
 }
